@@ -9,5 +9,8 @@
         update_cache: yes
       changed_when: False
 
-  tasks:
+  taosks:
+    - include: tasks/users.yml
+    - include: tasks/cron.yml
     - include: tasks/packages.yml
+
